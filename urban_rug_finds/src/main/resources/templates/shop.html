@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+    <link rel="stylesheet" th:href="@{/css/shop.css}">
+</head>
+<body>
+
+    <header>
+        <nav class="top-nav">
+            <ul>
+                <li><a th:href="@{/}">Home</a></li>
+                <li><a th:href="@{/shop}">Products</a></li>
+                <li><a th:href="@{/about}">About</a></li>
+            </ul>
+        </nav>
+        <h1>Marketplace</h1>
+    </header>
+
+    <section class="container">
+        <a th:href="@{/product}" class="product">
+            <img th:src="@{/images/product1.jpg}" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <span class="price">$49.99</span>
+            <button>Add to Cart</button>
+        </a>
+
+        <a th:href="@{/product}" class="product">
+            <img th:src="@{/images/product2.jpg}" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <span class="price">$29.99</span>
+            <button>Add to Cart</button>
+        </a>
+        <!-- Add more product links as needed -->
+        <a th:each="rug $" th:href="@{/product}"></a>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rug Market</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+    <header>
+        <nav class="top-nav">
+            <ul>
+                <li><a th:href="@{/}">Home</a></li>
+                <li><a th:href="@{/shop}">Products</a></li>
+                <li><a th:href="@{/about}">About</a></li>
+            </ul>
+        </nav>
+        <h1>Urban Rug Finds</h1>
+    </header>
+
+    <section>
+        <h1>Welcome to our Online Rug Market</h1>
+        <p>Discover a wide variety of high-quality rugs to enhance your living space. Browse our collection and find the perfect rug for your home.</p>
+        <a th:href="@{/shop}" class="cta-button">Shop Now</a>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" th:href="@{/css/product.css}">
+</head>
+<body>
+
+    <header>
+        <nav class="top-nav">
+            <ul>
+                <li><a th:href="@{/}">Home</a></li>
+                <li><a th:href="@{/shop}">Products</a></li>
+                <li><a th:href="@{/about}">About</a></li>
+            </ul>
+        </nav>
+        <h1>Product Page</h1>
+    </header>
+
+     <section class="container">
+        <div class="product">
+            <img th:src="@{/images/product1.jpg}" alt="Product 1">
+            <div class="product-details">
+                <h2>Product 1</h2>
+                <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="price">$49.99</p>
+            </div>
+            <button class="cta-button">Add to Cart</button>
+        </div>
+    </section>
+
+</body>
+</html>
