@@ -36,7 +36,13 @@
             <button>Add to Cart</button>
         </a>
         <!-- Add more product links as needed -->
-        <a th:each="rug $" th:href="@{/product}"></a>
+        <a th:each="rug : ${rugs}" th:href="@{/product}" class="product">
+            <img th:src="@{'data:image/png;base64,' + ${rug.getImage64()}}" alt="Product 1">
+            <h2>Product 2</h2>
+            <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <span th:text="${rug.getPrice()}" class="price">$29.99</span>
+            <button>Add to Cart</button>
+        </a>
     </section>
 
 </body>

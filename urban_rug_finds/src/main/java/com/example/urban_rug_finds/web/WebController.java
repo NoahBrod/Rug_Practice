@@ -20,7 +20,7 @@ public class WebController {
     
     @GetMapping("/shop")
     public String shop(Model model) {
-        model.addAttribute(rugService.getRugs());
+        model.addAttribute("rugs", rugService.getRugs());
         return "shop";
     }
 
