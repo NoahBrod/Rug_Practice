@@ -1,15 +1,22 @@
+@font-face {
+    font-family: Bristol;
+    src: url('http://localhost:8080/resources/fonts/Bristol.otf');
+}
+
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
+    font-family: Bristol;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fff;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
     text-align: center;
     padding: 1em 0;
+    display: flex;
 }
 
 .top-nav {
@@ -44,7 +51,7 @@ header {
     height: 400px;
     margin: 20px;
     padding: 15px;
-    background-color: #fff;
+    background-color: #c2b597;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -58,6 +65,7 @@ header {
     border-radius: 8px;
     margin-bottom: 10px;
 }
+
 
 h2 {
     color: #333;

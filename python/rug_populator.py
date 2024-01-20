@@ -12,7 +12,7 @@ maintenances = ["easy", "low", "high"]
 
 rand_num = 0
 
-for filename in os.listdir("python/rug_pics"):
+for filename in os.listdir("C:/Users/NOJA0/Documents/GitHub/Rug_Practice/python/rug_pics"):
     # image
     img_file = 0
     
@@ -54,9 +54,9 @@ for filename in os.listdir("python/rug_pics"):
     # filename_str = "python/rug_pics/" + filename_str + ".png"
     # img_file =  Image.open("python/rug_pics/" + filename)
     # img_file.save(filename_str)
-    with open("python/rug_pics/" + filename, 'rb') as file:
+    with open("C:/Users/NOJA0/Documents/GitHub/Rug_Practice/python/rug_pics/" + filename, 'rb') as file:
         requests.post("http://localhost:8080/api/v1/rug/addRug", data=payload, files={"file": file})
-    break
+    # break
 
 
 

@@ -27,13 +27,13 @@ public class RugRest {
     }
 
     @PostMapping("/addRug")
-    public void addRug(@RequestParam("file") MultipartFile file) throws IOException {
+    public void addRug(@RequestParam("file") MultipartFile file, @RequestParam("price")double price) throws IOException {
         // System.out.println(rug.toString());
         // byte[] image = Base64
         System.out.println(file);
         Rug rug = new Rug();
         rug.setImage(file.getBytes());
-        rug.setPrice(0);
+        rug.setPrice(price);
         rugService.saveRug(rug);
     }
     

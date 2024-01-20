@@ -17,4 +17,9 @@ public class RugService {
     public void saveRug(Rug rug) {
         rugRepo.save(rug);
     }
+
+    public List<Rug> pageableRugs() {
+        // rugRepo.findAll()
+        return null;
+    }
 }
